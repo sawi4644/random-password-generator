@@ -23,7 +23,7 @@ var lower = confirm("Use lowercase letters?");
 var specialC = confirm("Use special characters?");
 var number = confirm("Use numbers?");
 
-// validating input
+// while loop will run if one confirm above is canceled
 while((upper===false) && (lower===false) && (specialC===false) && (number===false)) {
   alert ('Need to Confirm Condition');
   var upper = confirm("Use at least one uppercase letters");
@@ -32,6 +32,12 @@ while((upper===false) && (lower===false) && (specialC===false) && (number===fals
   var number = confirm("Use at least one number");
   }
 
+  // password length portion
+  var passwordAmount = prompt ("How long would you like your password? Please choose between 8-128.");
+  if ((passwordAmount < 8) || (passwordAmount > 128)){
+    alert("Please choose your password length. Must be between 8-128.");
+    passwordAmount = prompt("How long would you like your password?");
+  } 
 
 // the acceptable password criteria(array)
 var upperCase= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
