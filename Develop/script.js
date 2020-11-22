@@ -58,8 +58,25 @@ if(lower){
     pickedCon.push(lowerCase[i]);
   }
 }
-
-
+// special character variable
+if(special){
+  for(var i=0; i < special.length; i++){
+    pickedCon.push(special[i]);
+  }
+}
+// numbers character variable 
+if(numbers){
+  for(var i=0; i < numbers.length; i++){
+    pickedCon.push(numbers[i]);
+  }
+}
+// final result stores all password critera 
+var finalResult = [];
+for(i=0; i < passwordAmount; i++){
+  finalResult.push(pickedCon[Math.floor(Math.random()*pickedCon.length)]);
+}
+// return finalResult
+return(finalResult.join(""));
 }
 
 // Add event listener to generate button
