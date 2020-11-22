@@ -26,9 +26,9 @@ var number = confirm("Use numbers?");
 // while loop will run if one confirm above is canceled
 while((upper===false) && (lower===false) && (specialC===false) && (number===false)) {
   alert ('Need to Confirm Condition');
-  var upper = confirm("Use at least one uppercase letters");
-  var lower = confirm("Use at least one lowercase letters");
-  var specialC = confirm("Use at least special characters");
+  var upper = confirm("Use uppercase letters?");
+  var lower = confirm("Use at least one lowercase letter");
+  var specialC = confirm("Use at least special character");
   var number = confirm("Use at least one number");
   }
 
@@ -45,6 +45,32 @@ var lowerCase= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 var numbers = ['1','2','3','4','5','6','7','8','9'];
 var special = ["\"","!","#","$","%","&","\'","(",")","*","+","-",".","/",":",";","<","=",">","?","@","[","]","^","`","{","|","}","~"];
 
+// uppercase variable
+if (upper) {
+  for(var i = 0; i < upperCase.length; i++ ){
+    pickedCon.push(upperCase[i]);
+
+  }
+}
+// lowercase variable
+if(lower){
+  for(var i=0; i < lowerCase.length; i++){
+    pickedCon.push(lowerCase[i]);
+  }
+}
+// special character variable
+if(special){
+  for(var i=0; i < specialChar.length; i++){
+    pickedCon.push(special[i]);
+  }
+}
+
+// numbers character variable 
+if(number){
+  for(var l=0; l < num.length; l++){
+    pickedChar.push(numbers[l]);
+  }
+}
 
 }
 
