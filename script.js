@@ -1,16 +1,4 @@
 // Assignment Code
-//starter code
-var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-//starter code
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 // starting personalized code
 
 function generatePassword(){
@@ -79,5 +67,17 @@ for(i=0; i < passwordAmount; i++){
 return(finalResult.join(""));
 }
 
+//starter code
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+//starter code
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
