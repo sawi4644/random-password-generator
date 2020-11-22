@@ -17,3 +17,9 @@ Once the password is generated for the user then the password will be written on
 
 # Built With
 <ul>VS Code - Mac </ul>
+
+# Screen Shots of Deployed Spot
+
+![updated-webpage](Assets/home.png)
+![updated-webpage](Assets/alert.png)
+![updated-webpage](Assets/password.png)
