@@ -15,7 +15,7 @@ function writePassword() {
 
 function generatePassword(){
 
-var pickedCon = [];
+var userPick = [];
 // asking user password criteria
 alert('Confirm All Conditions')
 var upper = confirm("Use uppercase letters?");
@@ -48,32 +48,32 @@ var special = ["\"","!","#","$","%","&","\'","(",")","*","+","-",".","/",":",";"
 // uppercase variable
 if (upper) {
   for(var i = 0; i < upperCase.length; i++ ){
-    pickedCon.push(upperCase[i]);
+    userPick.push(upperCase[i]);
 
   }
 }
 // lowercase variable
 if(lower){
   for(var i=0; i < lowerCase.length; i++){
-    pickedCon.push(lowerCase[i]);
+    userPick.push(lowerCase[i]);
   }
 }
 // special character variable
 if(special){
   for(var i=0; i < special.length; i++){
-    pickedCon.push(special[i]);
+    userPick.push(special[i]);
   }
 }
 // numbers character variable 
 if(numbers){
   for(var i=0; i < numbers.length; i++){
-    pickedCon.push(numbers[i]);
+    userPick.push(numbers[i]);
   }
 }
 // final result stores all password critera 
 var finalResult = [];
 for(i=0; i < passwordAmount; i++){
-  finalResult.push(pickedCon[Math.floor(Math.random()*pickedCon.length)]);
+  finalResult.push(userPick[Math.floor(Math.random()* userPick.length)]);
 }
 // return finalResult
 return(finalResult.join(""));
