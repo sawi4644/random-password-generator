@@ -36,7 +36,7 @@ while((upper===false) && (lower===false) && (specialC===false) && (number===fals
   var passwordAmount = prompt ("How long would you like your password? Please choose between 8-128.");
   if ((passwordAmount < 8) || (passwordAmount > 128)){
     alert("Please choose your password length. Must be between 8-128.");
-    passwordAmount = prompt("How long would you like your password?");
+    passwordAmount = prompt("Choose Length");
   } 
 
 // the acceptable password criteria(array)
