@@ -15,13 +15,22 @@ function writePassword() {
 
 function generatePassword(){
 
-var pickedChar = [];
+var pickedCon = [];
 // asking user password criteria
+alert('Confirm All Conditions')
 var upper = confirm("Use uppercase letters?");
 var lower = confirm("Use lowercase letters?");
-var special = confirm("Use special characters?");
+var specialC = confirm("Use special characters?");
 var number = confirm("Use numbers?");
 
+// validating input
+while((upper===false) && (lower===false) && (specialC===false) && (number===false)) {
+  alert ('Need to Confirm Condition');
+  var upper = confirm("Use at least one uppercase letters");
+  var lower = confirm("Use at least one lowercase letters");
+  var specialC = confirm("Use at least special characters");
+  var number = confirm("Use at least one number");
+  }
 
 
 // the acceptable password criteria(array)
