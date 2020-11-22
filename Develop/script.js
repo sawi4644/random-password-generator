@@ -24,7 +24,7 @@ var specialC = confirm("Use special characters?");
 var number = confirm("Use numbers?");
 
 // while loop will run if one confirm above is canceled
-while((upper===false) && (lower===false) && (specialC===false) && (number===false)) {
+if ((upper===false) && (lower===false) && (specialC===false) && (number===false)) {
   alert ('Need to Confirm Condition');
   var upper = confirm("Use uppercase letters?");
   var lower = confirm("Use at least one lowercase letter");
@@ -58,19 +58,7 @@ if(lower){
     pickedCon.push(lowerCase[i]);
   }
 }
-// special character variable
-if(special){
-  for(var i=0; i < specialChar.length; i++){
-    pickedCon.push(special[i]);
-  }
-}
 
-// numbers character variable 
-if(number){
-  for(var l=0; l < num.length; l++){
-    pickedChar.push(numbers[l]);
-  }
-}
 
 }
 
