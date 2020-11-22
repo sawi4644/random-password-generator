@@ -12,3 +12,6 @@ When the user is asked about length they are restricted between 8 characters and
 The user is only able to use lowercase, uppercase,numeric, and/ or special characters. The user is prompted to at least have one of the character options.
 When the user answers all prompts then they are able to generate a random password that matches all criteria. 
 Once the password is generated for the user then the password will be written on the page.
+
+# Built With
+<ul>VS Code - Mac </ul>
